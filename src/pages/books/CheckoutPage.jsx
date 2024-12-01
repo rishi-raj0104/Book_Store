@@ -65,7 +65,7 @@ const CheckoutPage = () => {
             alert("RazorPay SDK failed to load");
             return;
           }
-          const response = await axios.post('http://localhost:4000/api/v1/payment/capturePayment', { books ,newOrder });
+          const response = await axios.post('https://book-store-mu-two.vercel.app/api/v1/payment/capturePayment', { books ,newOrder });
           const orderId= response.data.orderId
             if (response.data.success) {
                 const { id, amount, currency } = response.data.paymentOrder;
