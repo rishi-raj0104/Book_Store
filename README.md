@@ -26,7 +26,7 @@ This is a book store web application built using **React**, **Vite**, **Express*
   - **Razorpay** for payment gateway integration.
   
 - **Backend**:
-  - **Express.js** for server-side functionality.
+  - **Express.js** (on top of Node.js) for server-side functionality.
   - **MongoDB** for storing user data and book information.
   - **Mongoose** for MongoDB object modeling.
 
