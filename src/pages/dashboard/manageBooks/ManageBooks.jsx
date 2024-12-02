@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import { useDeleteBookMutation, useFetchAllBooksQuery } from '../../../redux/features/books/booksApi';
-import { useNavigate } from 'react-router-dom';
 import UpdateBook from '../EditBook/UpdateBook'; 
 
 const ManageBooks = () => {
-    //const navigate = useNavigate();
     const { data: books, refetch } = useFetchAllBooksQuery();
     const [deleteBook] = useDeleteBookMutation();
     const [pageinfo, setPage] = useState('manage');

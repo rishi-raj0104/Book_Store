@@ -24,7 +24,6 @@ const Navbar = () => {
     const { currentUser, logout } = useAuth();
     const { data: books = [], isLoading, isError, error } =useFetchAllBooksQuery();
     
-    // Filter search results dynamically
     useEffect(() => {
         const fetchResults = () => {
             if (searchQuery.trim() === "") {
@@ -32,7 +31,6 @@ const Navbar = () => {
                 return;
             }
             try {
-                // Filter books by search query
                 const filteredResults = books.filter((book) =>
                     book.title.toLowerCase().includes(searchQuery.toLowerCase())
                 );
@@ -48,7 +46,6 @@ const Navbar = () => {
     const handleLogOut = () => {
         logout();
     };
-    // Close dropdown when clicking outside
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {

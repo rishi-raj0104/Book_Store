@@ -7,13 +7,6 @@ import { Pagination ,Navigation } from 'swiper/modules';
 import BookCard from '../books/BookCard';
 import { useFetchAllBooksQuery } from '../../redux/features/books/booksApi';
 const Recommend = () => {
-    //const [books ,setBooks]=useState([]);
-    // useEffect(() => {
-    //     fetch("books.json")
-    //       .then(res => res.json())
-    //       .then((data) => setBooks(data))
-    //       .catch(error => console.error('Error fetching books:', error));
-    //   }, []);
     const {data: books = []} = useFetchAllBooksQuery();
   return (
     <div className='py-16 px-10'>

@@ -20,7 +20,6 @@ const UserDashboard = () => {
         navigate('/login');
     };
 
-    // Calculate total orders and total price
     const totalOrders = orders.length;
     const totalPrice = orders.reduce((sum, order) => sum + order.totalPrice, 0);
 

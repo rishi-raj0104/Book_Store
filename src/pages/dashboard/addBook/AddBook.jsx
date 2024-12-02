@@ -45,16 +45,13 @@ const AddBook = () => {
   return (
     <div className="mx-auto md:p-6 p-3 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">Add New Book</h2>
-      {/* Form starts here */}
       <form onSubmit={handleSubmit(onSubmit)} className=''>
-        {/* Reusable Input Field for Title */}
         <InputField
           label="Title"
           name="title"
           placeholder="Enter book title"
           register={register}
         />
-        {/* Reusable Textarea for Description */}
         <InputField
           label="Description"
           name="description"
@@ -62,7 +59,6 @@ const AddBook = () => {
           type="textarea"
           register={register}
         />
-        {/* Reusable Select Field for Category */}
         <SelectField
           label="Category"
           name="category"
@@ -75,7 +71,6 @@ const AddBook = () => {
             { value: 'adventure', label: 'Adventure' },
             { value: 'marketing', label: 'Marketing' },
             { value: 'books', label: 'Books' },
-            // Add more options as needed
           ]}
           register={register}
         />

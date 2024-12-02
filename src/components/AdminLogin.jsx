@@ -29,7 +29,6 @@ const AdminLogin = () => {
                 }
            })
            const auth = response.data;
-            //console.log(auth)
             if(auth.token) {
                 localStorage.setItem('token', auth.token);
                 localStorage.setItem('username', auth.user.username);
@@ -40,7 +39,6 @@ const AdminLogin = () => {
                     navigate("/admin");
                 }, 3600 * 1000)
             }
-            //alert("Admin Login successful!")
             navigate("/admin/dashboard")
         } catch (error) {
             setMessage("Please provide a valid email and password") 

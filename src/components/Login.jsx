@@ -36,7 +36,6 @@ const Login = () => {
     const onSubmit = async (data) => {
         try {
             await loginUser(data.email, data.password);
-            //alert("Login successful!");
             navigate("/user-dashboard")
         } catch (error) {
             setMessage("Please provide a valid email and password")
@@ -46,7 +45,6 @@ const Login = () => {
     const handleGoogleSignIn = async () => {
         try {
             await signInWithGoogle();
-            // alert("Login successful!");
             navigate("/user-dashboard")
         } catch (error) {
             alert("Google sign in failed!")

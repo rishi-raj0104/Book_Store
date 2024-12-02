@@ -10,11 +10,7 @@ import axios from 'axios';
 import getBaseUrl from '../../../utils/baseURL';
 
 const UpdateBook = ({Bookid}) => {
-  //const { id } = useParams();
-  //const id ='673ec16ba746e1a548d582f1';
-  //console.log('Bookid2',Bookid);
   const { data: bookData, isLoading, isError, refetch } = useFetchBookByIdQuery(Bookid);
-  //console.log('bookData',bookData);
   const [updateBook] = useUpdateBookMutation();
   const { register, handleSubmit, setValue, reset } = useForm();
   useEffect(() => {
