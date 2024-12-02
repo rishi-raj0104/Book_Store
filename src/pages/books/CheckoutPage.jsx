@@ -87,6 +87,7 @@ const CheckoutPage = () => {
                             orderId
                             });
                             if (verifyResponse.data.success) {
+                                alert('Order Placed SUcessfully Redirecting to home page');
                                 navigate('/orders');
                                 dispatch(clearCart());
                                 
