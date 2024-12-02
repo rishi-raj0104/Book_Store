@@ -10,9 +10,9 @@ const AdminFooter = () => {
       {/* <div className="container mx-auto flex items-center justify-between px-10 py-6"> */}
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-10">  
         {/* Left: Logo */}
-        <div className="flex items-center md:ml-4">
+{/*         <div className="flex items-center md:ml-4">
           <img src={footer_logo} alt="Book Store Logo" className="h-20 md:h-28 w-auto" />
-        </div>
+        </div> */}
         {/* Center: Navigation Links */}
         <div className="flex flex-col items-center md:flex-row space-y-4 md:space-y-0 md:space-x-8">
           {/* <Link to="/admin" className="hover:text-gray-900">Home</Link> */}
