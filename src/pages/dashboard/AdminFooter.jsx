@@ -17,7 +17,7 @@ const AdminFooter = () => {
         <div className="flex flex-col items-center md:flex-row space-y-4 md:space-y-0 md:space-x-8">
           <Link to="/admin" className="hover:text-gray-900">Home</Link>
           {/* <Link to="/products" className="hover:text-gray-900">Products</Link> */}
-          <Link to="/dashboard" className="hover:text-gray-900">My Account</Link>
+          <Link to="/admin/dashboard" className="hover:text-gray-900">My Account</Link>
           {/* <Link to="/about" className="hover:text-gray-900">About Us</Link>
           <a href="#contact" className="hover:text-gray-900">Contact</a> */}
         </div>
