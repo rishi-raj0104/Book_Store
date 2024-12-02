@@ -80,7 +80,7 @@ const Navbar = () => {
                         <input
                             type="text"
                             placeholder="Search here"
-                            className="bg-[#EAEAEA] text-black w-24 md:w-44 py-1  px-6 rounded-md focus:outline-none"
+                            className="bg-[#EAEAEA] text-black w-24 md:w-44 py-1  px-8 rounded-md focus:outline-none"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             onFocus={() => setIsDropdownOpenSearch(true)} 
