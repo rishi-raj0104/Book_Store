@@ -36,7 +36,7 @@ const UpdateBook = ({Bookid}) => {
       coverImage: data.coverImage || bookData.coverImage,
     };
     try {
-      await axios.put(`${getBaseUrl()}/api/books/edit/${id}`, updateBookData, {
+      await axios.put(`${getBaseUrl()}/api/books/edit/${Bookid}`, updateBookData, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -105,6 +105,7 @@ const UpdateBook = ({Bookid}) => {
           name="oldPrice"
           type="number"
           placeholder="Old Price"
+          step="any" 
           register={register}
         />
         <InputField
@@ -112,6 +113,7 @@ const UpdateBook = ({Bookid}) => {
           name="newPrice"
           type="number"
           placeholder="New Price"
+          step="any" 
           register={register}
         />
         <InputField
