@@ -53,7 +53,7 @@ const UpdateBook = ({Bookid}) => {
       });
       await refetch()
     } catch (error) {
-      consle.log(error);
+      console.log(error);
       console.log("Failed to update book.");
       alert("Failed to update book.");
     }
