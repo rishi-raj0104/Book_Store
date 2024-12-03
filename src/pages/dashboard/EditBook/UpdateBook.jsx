@@ -104,8 +104,7 @@ const UpdateBook = ({Bookid}) => {
           label="Old Price"
           name="oldPrice"
           type="number"
-          placeholder="Old Price"
-          step="any" 
+          placeholder="Old Price" 
           register={register}
         />
         <InputField
@@ -113,7 +112,6 @@ const UpdateBook = ({Bookid}) => {
           name="newPrice"
           type="number"
           placeholder="New Price"
-          step="any" 
           register={register}
         />
         <InputField
