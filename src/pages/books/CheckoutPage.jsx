@@ -65,7 +65,9 @@ const CheckoutPage = () => {
             alert("RazorPay SDK failed to load");
             return;
           }
-          const response = await axios.post('http://localhost:4000/api/v1/payment/capturePayment', { books ,newOrder });
+          //const response = await axios.post('http://localhost:4000/api/v1/payment/capturePayment', { books ,newOrder });
+          const response = await axios.post('https://book-store-backend-five-alpha.vercel.app/api/v1/payment/capturePayment', { books ,newOrder });
+          
           const orderId= response.data.orderId
             if (response.data.success) {
                 const { id, amount, currency } = response.data.paymentOrder;
@@ -79,7 +81,8 @@ const CheckoutPage = () => {
                         order_id: id,
                         handler: async (response) => {
                         try {
-                            const verifyResponse = await axios.post('http://localhost:4000/api/v1/payment/verifyPayment', {
+                            //const verifyResponse = await axios.post('http://localhost:4000/api/v1/payment/verifyPayment', {
+                            const verifyResponse = await axios.post('https://book-store-backend-five-alpha.vercel.app/api/v1/payment/verifyPayment', {
                             razorpay_order_id: response.razorpay_order_id,
                             razorpay_payment_id: response.razorpay_payment_id,
                             razorpay_signature: response.razorpay_signature,
