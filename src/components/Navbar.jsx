@@ -46,6 +46,7 @@ const Navbar = () => {
     }, [searchQuery, books]);
     
     const handleLogOut = () => {
+        setIsDropdownOpen(false);
         logout();
     };
     // Close dropdown when clicking outside
