@@ -93,7 +93,16 @@ const Footer = () => {
           </h1>
           <p className="text-sm text-gray-500 mt-4"> It's time to update your reading list with some of the latest and greatest releases in the literary world.</p>
         </div>
-        <p className="text-sm text-gray-500 mt-4 text-center">© {new Date().getFullYear()} Book Store</p>
+        <p className="text-sm text-gray-500 mt-4 text-center">
+              Made with ❤️ 
+              <a 
+                href="https://www.linkedin.com/in/rishi-raj0104" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-500 hover:underline"
+              >
+              Rishi
+              </a> © {new Date().getFullYear()} Book Store</p>
       </div>
     </footer>
   );
